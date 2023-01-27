@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <!--1001° numero primo-->
+    <script>
+        var primosEncontrados = 0;
+        for (dividendo = 2; primosEncontrados <1001; dividendo++) {
+            var ehPrimo = true;
+            for (divisor = 2; dividendo > divisor ; divisor++) {
+                if (dividendo % divisor == 0) {
+                    ehPrimo = false;
+                    break;
+                };
+            };
+            if (Boolean(ehPrimo)) {
+                primosEncontrados++;
+            }
+        };
+        document.write("o 1001° número primo e: ");
+        document.write(--dividendo + '<br><br>');
+
+    </script>
+</head>
+<body>
+    exercicio 09
+</body>
+</html>
